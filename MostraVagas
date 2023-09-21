@@ -1,0 +1,13 @@
+<apex:page controller="ListaVaga">
+	<html>
+      
+		<head>
+			<apex:stylesheet value="{!$Resource.estilo}"/>
+        </head>
+    
+        <apex:dataList value="{!vagas}" var="vaga">
+        	<h1><apex:outputText value="{!vaga.Name}"/></h1>
+    	</apex:dataList>
+        
+    </html>
+</apex:page>
