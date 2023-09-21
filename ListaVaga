@@ -1,0 +1,13 @@
+public class ListaVaga {
+    
+	List<Vaga__c> vagas;
+
+	public List<Vaga__c> getVagas() {
+        if(vagas == null){
+            vagas = [SELECT Name FROM Vaga__c];
+        }
+        return vagas;
+        
+	}
+
+}
